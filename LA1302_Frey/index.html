@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/372358616d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="icon.png" type="image/svg+xml" />
+    <title>Meme-Generator</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-item">Meme-Generator</div>
+      <div id="toggle">
+        <i class="indicator"></i>
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="box-icon">
+        <i class="fa-solid fa-message"></i>
+      </div>
+
+      <div id="box">
+        <div class="box-item">
+          Das ist der Meme-Generator, wo Sie ein Bild hochladen können und
+          anschliessend einen beliebegen Text draufschreiben können. Natürlich
+          können Sie auch Ihr kreiertes Bild herunterladen :)
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="box-file"
+      style="animation: fade 3s; animation-iteration-count: 1"
+    >
+      <input type="file" id="image_input" accept="image/png, image/jpg" />
+    </div>
+
+    <div
+      class="box-item2"
+      style="
+        margin-left: 680px;
+        margin-top: 10px;
+        animation: fade 3s;
+        animation-iteration-count: 1;
+      "
+    >
+      Hier dein Text:
+    </div>
+    <input class="input-text" type="text" id="text" />
+
+    <canvas
+      style="animation: fade 3s; animation-iteration-count: 1"
+      id="display_image"
+    ></canvas>
+
+    <footer>
+      <div class="footer-item">Made by Lukas Frey</div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
